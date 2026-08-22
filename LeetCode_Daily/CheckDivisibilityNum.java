@@ -1,5 +1,16 @@
 package LeetCode_Daily;
+/*
+1. Calculate sum of all digits of n.
+2. Calculate product of all digits of n.
+3. Add digit sum and digit product.
+4. Check whether n is divisible by this value.
+5. Return true if divisible, otherwise false.
+Time Complexity:
+O(log n)
 
+Space Complexity:
+O(1)
+*/
 public class CheckDivisibilityNum {
     public static int digitSum(int n){
         int sum=0;
