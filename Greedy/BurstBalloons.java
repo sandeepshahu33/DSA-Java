@@ -4,6 +4,27 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /*
+Approach
+    Intervals ko start point ke according sort karo.
+    commonInterval mein un intervals ka common overlapping range maintain karo jo same arrow se burst ho sakte hain.
+
+    Agar current interval overlap karta hai:
+
+    curS <= commonInterval[1]
+
+    toh same arrow use karo aur common range update karo.
+
+    Agar overlap nahi karta, toh new arrow chahiye.
+    End mein total arrows return karo.
+Complexity
+    Time Complexity: O(n log n)
+    Sorting → O(n log n)
+    Traversal → O(n)
+    Overall → O(n log n)
+    
+Space Complexity: O(log n)
+    Arrays.sort() ki internal sorting stack ki wajah se.
+    Algorithm ki extra space = O(1).
 
  */
 public class BurstBalloons {
