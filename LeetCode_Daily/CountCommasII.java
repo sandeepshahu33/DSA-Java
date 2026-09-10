@@ -22,7 +22,7 @@ public class CountCommasII {
         return ans;
     }
     public static void main(String[] args) {
-        int n = 1004590;
+        int n = 10045;
         System.out.println(countCommas(n));
     }
 }
